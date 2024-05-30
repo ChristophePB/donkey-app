@@ -1,0 +1,19 @@
+<div class="list-donkey">
+  <div class="row">
+    <div class="col-9">
+      <h2>Available Donkeys</h2>
+      <div *ngFor="let donkey of donkeys" class="donkey-card">
+        <img [src]="donkey.photo" alt="{{ donkey.name }}">
+        <div>
+          <h3>{{ donkey.name }}</h3>
+          <p>{{ donkey.origin }}</p>
+          <p>{{ donkey.birthdate }}</p>
+          <button (click)="adoptDonkey(donkey)" class="btn btn-success">Adopt</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <app-user-donkey [donkeys]="userDonkeys"></app-user-donkey>
+    </div>
+  </div>
+</div>

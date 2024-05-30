@@ -1,0 +1,6 @@
+<div class="user-donkey">
+  <h2>My Donkeys</h2>
+  <div *ngFor="let donkey of donkeys" class="donkey-card">
+    <img [src]="donkey.photo" alt="{{ donkey.name }}">
+  </div>
+</div>

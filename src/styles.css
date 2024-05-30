@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  padding: 20px;
+}
+
+.create-donkey,
+.list-donkey,
+.user-donkey {
+  margin: 20px 0;
+}
+
+.donkey-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.donkey-card img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.donkey-card h3 {
+  margin: 0;
+}
